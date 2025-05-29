@@ -1,1 +1,4 @@
 # Gugs
+body{
+    button
+}
