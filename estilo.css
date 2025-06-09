@@ -1,8 +1,8 @@
 button {
     background-color:#00FFFF;
-    color:maroon;
-    border-radius:10px;
-    transition:background-color 0.3 ease;
+    color:darkcyan;
+    border-radius:100px;
+    transition:background-color 1.0 ease;
 }
 
 button:hover {
