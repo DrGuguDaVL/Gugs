@@ -18,6 +18,7 @@ p {
 body {
     background-color: maroon;
     border-color: blueviolet;
+    border-width: 100px;
 }
 
 
