@@ -14,11 +14,11 @@ h1 {
 }
 p {
  background-color: aquamarine;
+ border-color: indigo;
+ border-width: thick;
 }
 body {
     background-color: maroon;
-    border-color: blueviolet;
-    border-width: 100px;
 }
 
 
