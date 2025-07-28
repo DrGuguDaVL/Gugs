@@ -1,12 +1,12 @@
 button {
-    background-color:#00FFFF;
+    background-color:red;
     color:darkcyan;
     border-radius:100px;
     transition:background-color 1.0 ease;
 }
 
 button:hover {
-    background-color:aquamarine;
+    background-color:darkred;
 }
 h1 {
     background-color:orange;
