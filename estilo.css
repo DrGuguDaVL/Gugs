@@ -1,6 +1,6 @@
 button {
-    background-color:red;
-    color:darkcyan;
+    background-color:cyan
+    color:teal;
     border-radius:100px;
     transition:background-color 1.0 ease;
 }
@@ -30,7 +30,7 @@ p {
  background-color: lavender;
 }
 body {
-    background-color: rgb(red, green, blue);
+    background: -o-linear-gradient(red,orange,yellow,green,blue,purple,pink);
 }
 
 
