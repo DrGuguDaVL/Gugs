@@ -8,15 +8,29 @@ button {
 button:hover {
     background-color:darkred;
 }
-h1 {
-    background-color:orange;
-    border-color: blueviolet;
+h1{
+    background-color: red;
+}
+h2{
+    background-color: orange;
+}
+h3{
+    background-color: yellow;
+}
+h4{
+    background-color: green;
+}
+h5{
+    background-color:blue;
+}
+h6{
+    background-color: purple;
 }
 p {
  background-color: lavender;
 }
 body {
-    background-color: yellow;
+    background-color: rgb(red, green, blue);
 }
 
 
