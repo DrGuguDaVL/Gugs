@@ -1,1 +1,2 @@
-document.write("I HATE NIGGERS");
+nigga = 5 * 4
+document.write(nigga);
