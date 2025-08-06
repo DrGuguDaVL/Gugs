@@ -1,1 +1,1 @@
-console.log("Nigger");
+document.write("I HATE NIGGERS");
