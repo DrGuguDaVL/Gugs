@@ -48,7 +48,7 @@ script {
     align-items: center;
 }
 #content {
-    background: #2c302c;
+    background:gray;
     padding: 20px;
     border-radius: 10px;
 
@@ -69,6 +69,7 @@ script {
 }
 #res {
     padding: 10px;
+    background-color: cyan;
 }
 #clear {
     background-color: rgb(237, 89, 30);
