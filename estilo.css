@@ -84,7 +84,10 @@ form #output input {
     flex: 1;
     font-size: 25px;
 }
-#
+#percent {
+background-color: aqua;
+color:red
+}
 
 
 
