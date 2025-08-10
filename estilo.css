@@ -94,9 +94,9 @@ color:red
     color:blueviolet
 }
 #seven {
-    background-image: linear linear-gradient(blue,red,yellow,green);
+    color:red;
+    background-color: maroon;
 }
-
 
 
 
