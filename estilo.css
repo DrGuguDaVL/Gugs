@@ -78,6 +78,7 @@ form #output {
     display: flex;
     justify-content: flex-end;
     margin: 15px 0;
+    color:aqua
 }
 form #output input {
     text-align: right;
@@ -91,6 +92,9 @@ color:red
 #division {
     background-color:fuchsia;
     color:blueviolet
+}
+#seven {
+    background-image: linear linear-gradient(blue,red,yellow,green);
 }
 
 
