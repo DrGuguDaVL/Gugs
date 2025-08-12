@@ -8,6 +8,79 @@
 </head>
 <body>
     <p>Ola,sou gustavo, criador do projeto!</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Auth Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    form { margin-bottom: 2rem; }
+    label { display: block; margin: 0.5rem 0 0.2rem; }
+    input { padding: 0.4rem; width: 300px; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+
+  <h1>Register</h1>
+  <form id="registerForm">
+    <label>Email:</label>
+    <input type="email" id="registerEmail" required>
+    
+    <label>Password:</label>
+    <input type="password" id="registerPassword" required>
+    
+    <button type="submit">Register</button>
+  </form>
+
+  <h1>Login</h1>
+  <form id="loginForm">
+    <label>Email:</label>
+    <input type="email" id="loginEmail" required>
+    
+    <label>Password:</label>
+    <input type="password" id="loginPassword" required>
+    
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    const apiUrl = 'http://localhost:3000'; // Change to your backend URL
+
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
+
+      const res = await fetch(`${apiUrl}/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      const data = await res.text();
+      alert(data);
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+
+      const res = await fetch(`${apiUrl}/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      const data = await res.json();
+      if (data.token) {
+        alert('Login successful!');
+        // Optionally store token for authenticated requests
+        localStorage.setItem('token', data.token);
+      } els
+
    <input type="text">
    <input type="radio">
    <div id="calc">
