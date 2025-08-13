@@ -1,3 +1,12 @@
+if (data.token) {
+  alert('Login successful!');
+  // Optionally store token for authenticated requests
+  localStorage.setItem('token', data.token);
+
+  // ✅ Redirect to another page
+  window.location.href = 'dashboard.html'; // Change this to your target page
+}
+
 function Solve(val) {
    var v = document.getElementById('res');
    v.value += val;
