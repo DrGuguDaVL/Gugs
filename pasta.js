@@ -6,7 +6,7 @@ if (data.token) {
   // ✅ Redirect to another page
   window.location.href = 'dashboard.html'; // Change this to your target page
 }
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 function Solve(val) {
    var v = document.getElementById('res');
    v.value += val;
