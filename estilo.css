@@ -11,21 +11,6 @@ button:hover {
 h1{
     background-image: linear-gradient(180deg,red,orange,yellow,green,cyan,blue,purple,pink);
 }
-h2{
-    background-color: orange;
-}
-h3{
-    background-color: yellow;
-}
-h4{
-    background-color: green;
-}
-h5{
-    background-color:blue;
-}
-h6{
-    background-color: purple;
-}
 p {
   background-image: linear-gradient(45deg,red,green,blue);
 }
