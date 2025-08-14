@@ -9,7 +9,7 @@ button:hover {
     background-color:darkred;
 }
 h1{
-    background-color: red;
+    background-image: linear-gradient(180deg,red,orange,yellow,green,cyan,blue,purple,pink);
 }
 h2{
     background-color: orange;
