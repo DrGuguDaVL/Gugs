@@ -17,28 +17,11 @@ p {
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 1400% 1400%;
-  animation: hueShift 1s linear infinite;
-}
-
-@keyframes hueShift {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
-
-
-
-
-
-
-
-
-
+  background-image: linear-gradient(
+    89.7deg,
+    rgba(223, 0, 0, 1) 2.7%,
+    rgba(214, 91, 0, 1) 15.1%,
+    rgba(233, 245, 0, 1) 29.
 
 
 
