@@ -13,10 +13,17 @@ h1{
     background-image: linear-gradient(180deg,red,orange,yellow,green,cyan,blue,purple,pink);
 }
 body {
-background-image: linear-gradient( 89.7deg, rgba(223,0,0,1) 2.7%, rgba(214,91,0,1) 15.1%, rgba(233,245,0,1) 29.5%, rgba(23,255,17,1) 45.8%, rgba(29,255,255,1) 61.5%, rgba(5,17,255,1) 76.4%, rgba(202,0,253,1) 92.4% )
-
-
-
+background-image: linear-gradient( 89.7deg, rgba(223,0,0,1) 2.7%, rgba(214,91,0,1) 15.1%, rgba(233,245,0,1) 29.5%, rgba(23,255,17,1) 45.8%, rgba(29,255,255,1) 61.5%, rgba(5,17,255,1) 76.4%, rgba(202,0,253,1) 92.4% );
+animation: gradient-slide 5s infinite linear alternate;
+}
+@keyframes rotate-gradient {
+      0% {
+        background-image: linear-gradient(0deg, red, blue);
+      }
+      100% {
+        background-image: linear-gradient(360deg, red, blue);
+      }
+    }
 
 
 
