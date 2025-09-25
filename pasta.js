@@ -1,43 +1,65 @@
-// server.js - handles user registration API
+  const apiUrl = 'http://localhost:3000'; // Change to your backend URL
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const { Pool } = require('pg'); // PostgreSQL client
-const app = express();
-const port = 3000;
+    document.getElementById('registerForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('registerEmail').value;
+      const password = document.getElementById('registerPassword').value;
 
-app.use(bodyParser.json());
-app.use(express.static('public')); // Serve your frontend HTML/JS here
+      const res = await fetch(`${apiUrl}/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
 
-// PostgreSQL connection
-const db = new Pool({
-  user: 'your_db_user',
-  host: 'localhost',
-  database: 'your_db_name',
-  password: 'your_db_password',
-  port: 5432,
-});
+      const data = await res.text();
+      alert(data);
+    });
 
-// Endpoint to handle registration
-app.post('/api/register', async (req, res) => {
-  const { name, email, password } = req.body;
+    document.getElementById('loginForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
 
-  if (!name || !email || !password) {
-    return res.status(400).json({ message: 'Missing fields' });
+      const res = await fetch(`${apiUrl}/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+
+      const data = await res.json();
+      if (data.token) {
+        alert('Login successful!');
+        // Optionally store token for authenticated requests
+        localStorage.setItem('token', data.token);
+      } 
+       const token = localStorage.getItem('token');
+  if (!token) {
+    window.location.href = 'login.html'; // Redirect to login if not authenticated
   }
+      
+  const apiUrl = 'http://localhost:3000'; // Change to your backend URL
 
-  try {
-    const result = await db.query(
-      'INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING id',
-      [name, email, password]
-    );
-    res.json({ message: 'User registered!', userId: result.rows[0].id });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Error registering user' });
-  }
-});
+  // Registration logic remains the same...
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+  document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+
+    const res = await fetch(`${apiUrl}/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password })
+    });
+
+    const data = await res.json();
+    if (data.token) {
+      alert('Login successful!');
+      localStorage.setItem('token', data.token);
+
+      // ✅ Redirect here
+      window.location.href = 'dashboard.html'; // Replace with your actual page
+    } else {
+      alert('Login failed');
+    }
+  });
