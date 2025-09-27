@@ -1,9 +1,9 @@
 button {
-    background-color:cyan
+    background-color:cyan;
     color:teal;
     border-radius:100px;
     transition:background-color 1.0 ease;
-d}
+}
 
 button:hover {
     background-color:darkred;
