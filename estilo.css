@@ -24,6 +24,7 @@ body {
     }
     label {
        display: block; margin: 0.5rem 0 0.2rem;
+       color:fuchsia;
        }
     input {
        padding: 0.4rem; width: 300px; 
