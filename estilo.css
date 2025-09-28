@@ -4,7 +4,6 @@ button {
     border-radius:100px;
     transition:background-color 1.0 ease;
 }
-
 button:hover {
     background-color:darkred;
 }
