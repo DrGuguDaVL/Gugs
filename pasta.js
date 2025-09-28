@@ -61,5 +61,4 @@
       window.location.href = 'dashboard.html'; // Replace with your actual page
     } else {
       alert('Login failed');
-    }
-  });
+    }  })});
