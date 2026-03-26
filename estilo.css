@@ -1,11 +1,11 @@
 button {
-    background-color:cyan;
-    color:teal;
+    background-color:purple;
+    color:violet;
     border-radius:100px;
     transition:background-color 1.0 ease;
 }
 button:hover {
-    background-color:darkred;
+    background-color:indigo;
 }
 h1{
     background-color: #8F99FB;
@@ -13,7 +13,10 @@ h1{
 body {
   box-sizing: 10cm;
 }
-
+footer{
+  padding:100%;
+  background-color:darkorchid
+}
 body { 
   font-family: Arial, sans-serif; padding: 2rem; 
 }
@@ -22,7 +25,8 @@ body {
     }
     label {
        display: block; margin: 0.5rem 0 0.2rem;
-       color:fuchsia;
+       color:hotpink;
+       font-family: ;
        }
     input {
        padding: 0.4rem; width: 300px; 
