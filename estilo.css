@@ -1,4 +1,8 @@
-
+html{
+      cursor:none;
+      cursor:url(Screenshot__5_-removebg-preview.png),auto;
+      
+}
 button {
     background-color:purple;
     color:violet;
