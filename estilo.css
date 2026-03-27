@@ -1,6 +1,5 @@
 html{
-      cursor:none;
-      cursor:url(Screenshot__5_-removebg-preview.png),auto;
+      cursor:url(Screenshot__5_-removebg-preview.png)16 16,auto;
       
 }
 button {
@@ -19,8 +18,9 @@ body {
   box-sizing: 10cm;
 }
 header{
-  padding:5%;
+  padding:20px;
   background-color:darkorchid;
+  font-size:10px;
 }
 body { 
   font-family: Arial, sans-serif; padding: 2rem; 
