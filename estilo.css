@@ -27,7 +27,7 @@ body {
     label {
        display: block; margin: 0.5rem 0 0.2rem;
        color:hotpink;
-       font-family: ;
+       font-family: "Cherry Cream Soda", system-ui;
        }
     input {
        padding: 0.4rem; width: 300px; 
